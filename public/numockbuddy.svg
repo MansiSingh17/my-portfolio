@@ -1,0 +1,198 @@
+<svg width="640" height="780" viewBox="0 0 680 780" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI',Arial,sans-serif">
+<defs>
+  <clipPath id="screenclip"><rect x="174" y="182" width="232" height="148" rx="2"/></clipPath>
+  <clipPath id="tabclip"><rect x="72" y="248" width="104" height="134" rx="2"/></clipPath>
+  <clipPath id="mobclip"><rect x="468" y="268" width="58" height="108" rx="2"/></clipPath>
+</defs>
+<rect width="680" height="780" fill="#1a2a4a"/>
+<rect width="680" height="780" fill="#162238" opacity="0.5"/>
+<circle cx="60" cy="30" r="1.2" fill="#ffffff" opacity="0.7"/>
+<circle cx="130" cy="18" r="1" fill="#ffffff" opacity="0.5"/>
+<circle cx="220" cy="40" r="1.4" fill="#ffffff" opacity="0.8"/>
+<circle cx="310" cy="22" r="1" fill="#ffffff" opacity="0.6"/>
+<circle cx="400" cy="35" r="1.2" fill="#ffffff" opacity="0.7"/>
+<circle cx="490" cy="15" r="1" fill="#ffffff" opacity="0.5"/>
+<circle cx="580" cy="28" r="1.3" fill="#ffffff" opacity="0.7"/>
+<circle cx="640" cy="50" r="1" fill="#ffffff" opacity="0.4"/>
+<circle cx="170" cy="55" r="0.8" fill="#ffffff" opacity="0.5"/>
+<circle cx="540" cy="55" r="0.9" fill="#ffffff" opacity="0.6"/>
+<rect x="0" y="120" width="55" height="280" fill="#0d1b30"/>
+<rect x="50" y="160" width="40" height="240" fill="#0f1f36"/>
+<rect x="85" y="100" width="30" height="300" fill="#0d1b30"/>
+<rect x="110" y="140" width="50" height="260" fill="#0f1f36"/>
+<rect x="545" y="130" width="45" height="270" fill="#0d1b30"/>
+<rect x="585" y="155" width="50" height="245" fill="#0f1f36"/>
+<rect x="630" y="110" width="50" height="290" fill="#0d1b30"/>
+<rect x="595" y="175" width="40" height="225" fill="#0f1f36"/>
+<rect x="8" y="130" width="7" height="5" fill="#4a7fa5" opacity="0.6"/>
+<rect x="20" y="130" width="7" height="5" fill="#4a7fa5" opacity="0.4"/>
+<rect x="8" y="145" width="7" height="5" fill="#3d6b8a" opacity="0.5"/>
+<rect x="20" y="145" width="7" height="5" fill="#4a7fa5" opacity="0.7"/>
+<rect x="8" y="160" width="7" height="5" fill="#4a7fa5" opacity="0.3"/>
+<rect x="20" y="160" width="7" height="5" fill="#3d6b8a" opacity="0.6"/>
+<rect x="593" y="165" width="7" height="5" fill="#4a7fa5" opacity="0.6"/>
+<rect x="605" y="165" width="7" height="5" fill="#3d6b8a" opacity="0.4"/>
+<rect x="593" y="180" width="7" height="5" fill="#4a7fa5" opacity="0.5"/>
+<rect x="605" y="180" width="7" height="5" fill="#4a7fa5" opacity="0.7"/>
+<rect x="640" y="125" width="7" height="5" fill="#3d6b8a" opacity="0.5"/>
+<rect x="655" y="125" width="7" height="5" fill="#4a7fa5" opacity="0.6"/>
+<rect x="640" y="140" width="7" height="5" fill="#4a7fa5" opacity="0.4"/>
+<rect x="655" y="140" width="7" height="5" fill="#3d6b8a" opacity="0.7"/>
+<rect x="0" y="395" width="680" height="30" fill="#0d1520"/>
+<rect x="0" y="420" width="680" height="360" fill="#0a1018"/>
+<rect x="46" y="270" width="5" height="130" fill="#2a3f5f"/>
+<path d="M51 270 Q70 258 80 265" stroke="#2a3f5f" stroke-width="4" fill="none"/>
+<ellipse cx="80" cy="266" rx="8" ry="5" fill="#ffe9a0" opacity="0.9"/>
+<ellipse cx="80" cy="268" rx="12" ry="8" fill="#ffe9a0" opacity="0.2"/>
+<rect x="629" y="270" width="5" height="130" fill="#2a3f5f"/>
+<path d="M629 270 Q610 258 600 265" stroke="#2a3f5f" stroke-width="4" fill="none"/>
+<ellipse cx="600" cy="266" rx="8" ry="5" fill="#ffe9a0" opacity="0.9"/>
+<ellipse cx="600" cy="268" rx="12" ry="8" fill="#ffe9a0" opacity="0.2"/>
+<rect x="162" y="172" width="256" height="170" rx="10" fill="#1c2d48" stroke="#2d4a6e" stroke-width="2"/>
+<rect x="174" y="182" width="232" height="148" rx="2" fill="#0f1e33"/>
+<rect x="174" y="182" width="232" height="18" rx="2" fill="#1e3a5f"/>
+<circle cx="184" cy="191" r="3.5" fill="#ff6b6b" opacity="0.85"/>
+<circle cx="195" cy="191" r="3.5" fill="#ffd93d" opacity="0.85"/>
+<circle cx="206" cy="191" r="3.5" fill="#6bcb77" opacity="0.85"/>
+<text x="290" y="195" text-anchor="middle" font-size="8" fill="#7eb8e8" font-weight="700" font-family="Arial,sans-serif">NUMockBuddy</text>
+<rect x="174" y="200" width="232" height="12" fill="#0d1a2e"/>
+<rect x="178" y="203" width="28" height="6" rx="3" fill="#1e3a5f"/>
+<rect x="210" y="203" width="28" height="6" rx="3" fill="#1e3a5f"/>
+<rect x="242" y="203" width="28" height="6" rx="3" fill="#1e3a5f"/>
+<rect x="274" y="203" width="28" height="6" rx="3" fill="#1e3a5f"/>
+<rect x="178" y="216" width="228" height="28" rx="3" fill="#132240" stroke="#1e3a5f" stroke-width="0.8"/>
+<text x="184" y="226" font-size="6.5" fill="#4a9fd4" font-weight="700" font-family="Arial,sans-serif">Q2 of 5  |  Technical  |  Google SWE</text>
+<text x="184" y="238" font-size="6" fill="#7eb8e8" font-family="Arial,sans-serif">Design a distributed rate limiter...</text>
+<rect x="178" y="248" width="140" height="72" rx="3" fill="#0a1220" stroke="#1a3050" stroke-width="0.8"/>
+<rect x="178" y="248" width="140" height="10" rx="3" fill="#132240"/>
+<text x="183" y="256" font-size="5.5" fill="#6a9fbf" font-family="monospace">solution.py</text>
+<text x="183" y="268" font-size="5.5" fill="#569cd6" font-family="monospace">class</text>
+<text x="202" y="268" font-size="5.5" fill="#4ec9b0" font-family="monospace">RateLimiter:</text>
+<text x="183" y="278" font-size="5.5" fill="#d4d4d4" font-family="monospace">  def __init__(self):</text>
+<text x="183" y="288" font-size="5.5" fill="#d4d4d4" font-family="monospace">    self.tokens = {}</text>
+<text x="183" y="298" font-size="5.5" fill="#6a9fbf" font-family="monospace">  # sliding window</text>
+<text x="183" y="308" font-size="5.5" fill="#ce9178" font-family="monospace">    return True</text>
+<rect x="322" y="248" width="80" height="72" rx="3" fill="#0a1220" stroke="#1a3050" stroke-width="0.8"/>
+<rect x="322" y="248" width="80" height="26" rx="3" fill="#132240"/>
+<circle cx="362" cy="261" r="9" fill="#0d1a2e" stroke="#2d6a9f" stroke-width="1"/>
+<circle cx="362" cy="258" r="4" fill="#2d6a9f" opacity="0.8"/>
+<ellipse cx="362" cy="268" rx="6" ry="3" fill="#2d6a9f" opacity="0.5"/>
+<circle cx="327" cy="252" r="2" fill="#4CAF50"/>
+<text x="332" y="255" font-size="5" fill="#4CAF50" font-weight="700" font-family="Arial,sans-serif">LIVE</text>
+<text x="326" y="284" font-size="5" fill="#4a9fd4" font-family="Arial,sans-serif">Comm.</text>
+<rect x="326" y="286" width="72" height="5" rx="2" fill="#0d1a2e"/>
+<rect x="326" y="286" width="58" height="5" rx="2" fill="#2d6a9f" opacity="0.8"/>
+<text x="326" y="298" font-size="5" fill="#4CAF50" font-family="Arial,sans-serif">Technical</text>
+<rect x="326" y="300" width="72" height="5" rx="2" fill="#0d1a2e"/>
+<rect x="326" y="300" width="49" height="5" rx="2" fill="#2e7d32" opacity="0.8"/>
+<text x="326" y="312" font-size="5" fill="#4a9fd4" font-family="Arial,sans-serif">Confidence</text>
+<rect x="326" y="314" width="72" height="5" rx="2" fill="#0d1a2e"/>
+<rect x="326" y="314" width="65" height="5" rx="2" fill="#2d6a9f" opacity="0.8"/>
+<rect x="276" y="342" width="28" height="14" rx="2" fill="#1c2d48"/>
+<rect x="256" y="354" width="68" height="6" rx="3" fill="#1c2d48" stroke="#2d4a6e" stroke-width="1"/>
+<rect x="64" y="238" width="120" height="162" rx="8" fill="#1c2d48" stroke="#2d4a6e" stroke-width="1.5"/>
+<rect x="72" y="248" width="104" height="134" rx="2" fill="#0f1e33"/>
+<rect x="72" y="248" width="104" height="14" rx="2" fill="#1e3a5f"/>
+<text x="124" y="258" text-anchor="middle" font-size="6" fill="#7eb8e8" font-weight="700" font-family="Arial,sans-serif">NUMockBuddy</text>
+<rect x="76" y="265" width="96" height="22" rx="2" fill="#132240" stroke="#1e3a5f" stroke-width="0.5"/>
+<circle cx="85" cy="276" r="6" fill="#1e3a5f" stroke="#2d6a9f" stroke-width="1"/>
+<text x="85" y="279" text-anchor="middle" font-size="5" fill="#4a9fd4" font-weight="700" font-family="Arial,sans-serif">K</text>
+<text x="96" y="273" font-size="5.5" fill="#ffffff" font-weight="700" font-family="Arial,sans-serif">Kevin Liu</text>
+<text x="96" y="282" font-size="5" fill="#7eb8e8" font-family="Arial,sans-serif">MSCS · Google SWE</text>
+<rect x="76" y="290" width="96" height="22" rx="2" fill="#132240" stroke="#1e3a5f" stroke-width="0.5"/>
+<circle cx="85" cy="301" r="6" fill="#1e3a5f" stroke="#2e7d32" stroke-width="1"/>
+<text x="85" y="304" text-anchor="middle" font-size="5" fill="#4CAF50" font-weight="700" font-family="Arial,sans-serif">R</text>
+<text x="96" y="298" font-size="5.5" fill="#ffffff" font-weight="700" font-family="Arial,sans-serif">Raj Patel</text>
+<text x="96" y="307" font-size="5" fill="#7eb8e8" font-family="Arial,sans-serif">MSCS · Apple ML Eng</text>
+<rect x="76" y="315" width="96" height="22" rx="2" fill="#132240" stroke="#1e3a5f" stroke-width="0.5"/>
+<circle cx="85" cy="326" r="6" fill="#1e3a5f" stroke="#2d6a9f" stroke-width="1"/>
+<text x="85" y="329" text-anchor="middle" font-size="5" fill="#4a9fd4" font-weight="700" font-family="Arial,sans-serif">S</text>
+<text x="96" y="323" font-size="5.5" fill="#ffffff" font-weight="700" font-family="Arial,sans-serif">Sofia Martinez</text>
+<text x="96" y="332" font-size="5" fill="#7eb8e8" font-family="Arial,sans-serif">MBA · Meta PM</text>
+<rect x="76" y="340" width="96" height="22" rx="2" fill="#132240" stroke="#1e3a5f" stroke-width="0.5"/>
+<circle cx="85" cy="351" r="6" fill="#1e3a5f" stroke="#2e7d32" stroke-width="1"/>
+<text x="85" y="354" text-anchor="middle" font-size="5" fill="#4CAF50" font-weight="700" font-family="Arial,sans-serif">P</text>
+<text x="96" y="348" font-size="5.5" fill="#ffffff" font-weight="700" font-family="Arial,sans-serif">Priya Sharma</text>
+<text x="96" y="357" font-size="5" fill="#7eb8e8" font-family="Arial,sans-serif">MSIS · Amazon DE</text>
+<circle cx="124" cy="392" r="4" fill="#2d4a6e"/>
+<rect x="460" y="258" width="74" height="130" rx="10" fill="#1c2d48" stroke="#2d4a6e" stroke-width="1.5"/>
+<rect x="468" y="268" width="58" height="108" rx="2" fill="#0f1e33"/>
+<rect x="468" y="268" width="58" height="13" rx="2" fill="#1e3a5f"/>
+<text x="497" y="277" text-anchor="middle" font-size="5.5" fill="#7eb8e8" font-weight="700" font-family="Arial,sans-serif">NUMockBuddy</text>
+<text x="497" y="294" text-anchor="middle" font-size="6" fill="#7eb8e8" font-family="Arial,sans-serif">Interview Complete</text>
+<circle cx="497" cy="316" r="18" fill="#0a1220" stroke="#2d6a9f" stroke-width="2"/>
+<text x="497" y="312" text-anchor="middle" font-size="10" fill="#4a9fd4" font-weight="700" font-family="Arial,sans-serif">8.4</text>
+<text x="497" y="323" text-anchor="middle" font-size="5.5" fill="#7eb8e8" font-family="Arial,sans-serif">/10</text>
+<rect x="472" y="337" width="50" height="6" rx="2" fill="#0a1220"/>
+<rect x="472" y="337" width="40" height="6" rx="2" fill="#2d6a9f" opacity="0.7"/>
+<text x="472" y="335" font-size="4.5" fill="#4a9fd4" font-family="Arial,sans-serif">Communication</text>
+<rect x="472" y="348" width="50" height="6" rx="2" fill="#0a1220"/>
+<rect x="472" y="348" width="34" height="6" rx="2" fill="#2e7d32" opacity="0.7"/>
+<text x="472" y="346" font-size="4.5" fill="#4CAF50" font-family="Arial,sans-serif">Technical</text>
+<rect x="472" y="359" width="50" height="6" rx="2" fill="#0a1220"/>
+<rect x="472" y="359" width="45" height="6" rx="2" fill="#2d6a9f" opacity="0.7"/>
+<text x="472" y="357" font-size="4.5" fill="#4a9fd4" font-family="Arial,sans-serif">Confidence</text>
+<circle cx="497" cy="382" r="3" fill="#2d4a6e"/>
+<rect x="548" y="228" width="108" height="138" rx="8" fill="#f8f9fa" stroke="#dee2e6" stroke-width="1.2"/>
+<text x="555" y="244" font-size="7.5" fill="#1c2d48" font-weight="700" font-family="Arial,sans-serif">AI Expert Panel</text>
+<line x1="555" y1="248" x2="648" y2="248" stroke="#dee2e6" stroke-width="0.8"/>
+<circle cx="563" cy="259" r="5" fill="#e3f2fd"/>
+<text x="563" y="262" text-anchor="middle" font-size="5" fill="#1565C0" font-weight="700" font-family="Arial,sans-serif">1</text>
+<text x="572" y="262" font-size="6" fill="#37474f" font-family="Arial,sans-serif">Communication</text>
+<text x="645" y="262" text-anchor="end" font-size="6" fill="#1565C0" font-weight="700" font-family="Arial,sans-serif">8/10</text>
+<circle cx="563" cy="274" r="5" fill="#e8f5e9"/>
+<text x="563" y="277" text-anchor="middle" font-size="5" fill="#2e7d32" font-weight="700" font-family="Arial,sans-serif">2</text>
+<text x="572" y="277" font-size="6" fill="#37474f" font-family="Arial,sans-serif">Technical</text>
+<text x="645" y="277" text-anchor="end" font-size="6" fill="#2e7d32" font-weight="700" font-family="Arial,sans-serif">7/10</text>
+<circle cx="563" cy="289" r="5" fill="#e3f2fd"/>
+<text x="563" y="292" text-anchor="middle" font-size="5" fill="#1565C0" font-weight="700" font-family="Arial,sans-serif">3</text>
+<text x="572" y="292" font-size="6" fill="#37474f" font-family="Arial,sans-serif">Problem Solving</text>
+<text x="645" y="292" text-anchor="end" font-size="6" fill="#1565C0" font-weight="700" font-family="Arial,sans-serif">9/10</text>
+<circle cx="563" cy="304" r="5" fill="#e8f5e9"/>
+<text x="563" y="307" text-anchor="middle" font-size="5" fill="#2e7d32" font-weight="700" font-family="Arial,sans-serif">4</text>
+<text x="572" y="307" font-size="6" fill="#37474f" font-family="Arial,sans-serif">Behavioral</text>
+<text x="645" y="307" text-anchor="end" font-size="6" fill="#2e7d32" font-weight="700" font-family="Arial,sans-serif">8/10</text>
+<circle cx="563" cy="319" r="5" fill="#e3f2fd"/>
+<text x="563" y="322" text-anchor="middle" font-size="5" fill="#1565C0" font-weight="700" font-family="Arial,sans-serif">5</text>
+<text x="572" y="322" font-size="6" fill="#37474f" font-family="Arial,sans-serif">Confidence</text>
+<text x="645" y="322" text-anchor="end" font-size="6" fill="#1565C0" font-weight="700" font-family="Arial,sans-serif">9/10</text>
+<circle cx="563" cy="334" r="5" fill="#e8f5e9"/>
+<text x="563" y="337" text-anchor="middle" font-size="5" fill="#2e7d32" font-weight="700" font-family="Arial,sans-serif">6</text>
+<text x="572" y="337" font-size="6" fill="#37474f" font-family="Arial,sans-serif">Overall</text>
+<text x="645" y="337" text-anchor="end" font-size="6" fill="#2e7d32" font-weight="700" font-family="Arial,sans-serif">8/10</text>
+<line x1="555" y1="345" x2="648" y2="345" stroke="#dee2e6" stroke-width="0.8"/>
+<rect x="576" y="349" width="56" height="12" rx="6" fill="#1565C0"/>
+<text x="604" y="358" text-anchor="middle" font-size="6.5" fill="#ffffff" font-weight="700" font-family="Arial,sans-serif">VERDICT</text>
+<text x="340" y="450" text-anchor="middle" font-size="42" font-weight="700" fill="#ffffff" font-family="Georgia,serif">NUMockBuddy</text>
+<line x1="160" y1="462" x2="520" y2="462" stroke="#2d6a9f" stroke-width="1" opacity="0.6"/>
+<text x="340" y="480" text-anchor="middle" font-size="13" fill="#4a9fd4" font-family="Arial,sans-serif" letter-spacing="2">AI MOCK INTERVIEWS · NORTHEASTERN UNIVERSITY</text>
+<line x1="160" y1="490" x2="520" y2="490" stroke="#2d6a9f" stroke-width="1" opacity="0.6"/>
+<rect x="152" y="508" width="82" height="26" rx="13" fill="#1e3a5f" stroke="#2d6a9f" stroke-width="1.2"/>
+<text x="193" y="525" text-anchor="middle" font-size="11" fill="#7eb8e8" font-weight="700" font-family="Arial,sans-serif">Claude API</text>
+<rect x="244" y="508" width="82" height="26" rx="13" fill="#1a3520" stroke="#2e7d32" stroke-width="1.2"/>
+<text x="285" y="525" text-anchor="middle" font-size="11" fill="#81C784" font-weight="700" font-family="Arial,sans-serif">AssemblyAI</text>
+<rect x="336" y="508" width="82" height="26" rx="13" fill="#1e3a5f" stroke="#2d6a9f" stroke-width="1.2"/>
+<text x="377" y="525" text-anchor="middle" font-size="11" fill="#7eb8e8" font-weight="700" font-family="Arial,sans-serif">Next.js 14</text>
+<rect x="428" y="508" width="82" height="26" rx="13" fill="#1a3520" stroke="#2e7d32" stroke-width="1.2"/>
+<text x="469" y="525" text-anchor="middle" font-size="11" fill="#81C784" font-weight="700" font-family="Arial,sans-serif">PostgreSQL</text>
+<rect x="114" y="544" width="94" height="26" rx="13" fill="#1a3520" stroke="#2e7d32" stroke-width="1.2"/>
+<text x="161" y="561" text-anchor="middle" font-size="11" fill="#81C784" font-weight="700" font-family="Arial,sans-serif">LangChain</text>
+<rect x="218" y="544" width="94" height="26" rx="13" fill="#1e3a5f" stroke="#2d6a9f" stroke-width="1.2"/>
+<text x="265" y="561" text-anchor="middle" font-size="11" fill="#7eb8e8" font-weight="700" font-family="Arial,sans-serif">Monaco IDE</text>
+<rect x="322" y="544" width="106" height="26" rx="13" fill="#1a3520" stroke="#2e7d32" stroke-width="1.2"/>
+<text x="375" y="561" text-anchor="middle" font-size="11" fill="#81C784" font-weight="700" font-family="Arial,sans-serif">Claude Vision</text>
+<rect x="438" y="544" width="106" height="26" rx="13" fill="#1e3a5f" stroke="#2d6a9f" stroke-width="1.2"/>
+<text x="491" y="561" text-anchor="middle" font-size="11" fill="#7eb8e8" font-weight="700" font-family="Arial,sans-serif">Google Meet</text>
+<text x="130" y="618" text-anchor="middle" font-size="28" font-weight="700" fill="#4a9fd4" font-family="Georgia,serif">400+</text>
+<text x="130" y="638" text-anchor="middle" font-size="11" fill="#5a7fa0" font-family="Arial,sans-serif">Mock Sessions</text>
+<text x="270" y="618" text-anchor="middle" font-size="28" font-weight="700" fill="#81C784" font-family="Georgia,serif">6</text>
+<text x="270" y="638" text-anchor="middle" font-size="11" fill="#5a7fa0" font-family="Arial,sans-serif">AI Reviewers</text>
+<text x="410" y="618" text-anchor="middle" font-size="28" font-weight="700" fill="#4a9fd4" font-family="Georgia,serif">30+</text>
+<text x="410" y="638" text-anchor="middle" font-size="11" fill="#5a7fa0" font-family="Arial,sans-serif">Companies</text>
+<text x="550" y="618" text-anchor="middle" font-size="28" font-weight="700" fill="#81C784" font-family="Georgia,serif">4.8★</text>
+<text x="550" y="638" text-anchor="middle" font-size="11" fill="#5a7fa0" font-family="Arial,sans-serif">Rating</text>
+<rect x="608" y="720" width="44" height="44" rx="10" fill="#1e3a5f" stroke="#2d6a9f" stroke-width="1.5"/>
+<path d="M630 730 C622 730 616 736 616 744 C616 750.6 620.2 756.2 626 758.1 C626.8 758.3 627 757.8 627 757.4 C627 757 627 755.7 627 754.1 C622.8 755 621.8 752.1 621.8 752.1 C621.1 750.4 620 750 620 750 C618.5 748.9 620.1 749 620.1 749 C621.7 749.1 622.6 750.6 622.6 750.6 C624 753 626.3 752.3 627.1 751.8 C627.3 750.8 627.7 750.1 628.1 749.7 C624.6 749.3 620.9 747.9 620.9 742 C620.9 740.3 621.5 739 622.6 737.9 C622.4 737.5 621.8 736 623 734 C623 734 624.4 733.6 627 735.4 C628.1 735.1 629.3 734.9 630.5 734.9 C631.7 734.9 632.9 735.1 634 735.4 C636.6 733.6 638 734 638 734 C639.2 736 638.6 737.5 638.4 737.9 C639.5 739 640.1 740.3 640.1 742 C640.1 747.9 636.4 749.3 632.9 749.7 C633.4 750.2 633.9 751.2 633.9 752.7 C633.9 755 633.9 756.9 633.9 757.4 C633.9 757.8 634.1 758.3 634.9 758.1 C640.7 756.2 644.9 750.6 644.9 744 C644.9 736 638.9 730 630 730Z" fill="#7eb8e8"/>
+<path d="M658 752 L660 748 L662 752 L660 756Z" fill="#7eb8e8" opacity="0.7"/>
+<path d="M658 752 L654 750 L658 752 L662 750Z" fill="#7eb8e8" opacity="0.5"/>
+</svg>
