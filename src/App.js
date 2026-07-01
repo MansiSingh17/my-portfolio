@@ -243,7 +243,6 @@ export default function Portfolio() {
   const P  = '#ADB2D4';  // lavender (dark accent)
   const PL = '#6B72A8';  // deeper lavender (light accent)
   const bg         = t('bg-[#0d1117]', 'bg-[#EEF1DA]');
-  const bgAlt      = t('bg-[#161b27]', 'bg-[#EEF0F8]');
   const card       = t('bg-[#1e2535] border-[#2a3347] hover:border-[#ADB2D4]/60', 'bg-white border-[#D4D8EE] hover:border-[#ADB2D4] shadow-sm');
   const txt        = t('text-white', 'text-slate-900');
   const txtMuted   = t('text-[#ADB2D4]', 'text-slate-600');
