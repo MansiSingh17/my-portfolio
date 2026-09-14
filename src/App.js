@@ -92,65 +92,67 @@ export default function Portfolio() {
 
   const skillCategories = [
     {
-      title: "Languages", icon: <Laptop size={20} />,
+      title: "Programming Languages", icon: <Laptop size={20} />,
       darkBg: "bg-[#ADB2D4]/15 text-[#ADB2D4]", lightBg: "bg-[#ADB2D4]/25 text-[#6B72A8]",
       skills: [
         { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
         { name: "Java", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
-        { name: "SQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
+        { name: "Go", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg" },
         { name: "TypeScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" },
         { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
-        { name: "Bash/Shell", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" },
+        { name: "SQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
         { name: "HTML/CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" }
       ]
     },
     {
-      title: "Frameworks & Backend", icon: <Globe size={20} />,
-      darkBg: "bg-[#C7D9DD]/15 text-[#C7D9DD]", lightBg: "bg-[#C7D9DD]/40 text-[#4a7a8a]",
-      skills: [
-        { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
-        { name: "Next.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
-        { name: "Node.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
-        { name: "Spring Boot", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" },
-        { name: "Angular", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" },
-        { name: "REST APIs", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" }
-      ]
-    },
-    {
-      title: "DevOps & Cloud", icon: <Wrench size={20} />,
+      title: "Databases & Cloud", icon: <BookOpen size={20} />,
       darkBg: "bg-[#2a3347]/60 text-[#9098c0]", lightBg: "bg-[#D5E5D5]/60 text-[#4a7a5a]",
-      skills: [
-        { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
-        { name: "Kubernetes", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-original.svg" },
-        { name: "Jenkins", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" },
-        { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
-        { name: "AWS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" },
-        { name: "GCP", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" },
-        { name: "Terraform", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" }
-      ]
-    },
-    {
-      title: "Databases & Messaging", icon: <BookOpen size={20} />,
-      darkBg: "bg-[#ADB2D4]/15 text-[#c0c4e8]", lightBg: "bg-[#ADB2D4]/25 text-[#6B72A8]",
       skills: [
         { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
         { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
-        { name: "MongoDB", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
         { name: "Redis", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" },
-        { name: "Kafka", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apache/apache-original.svg" },
-        { name: "RabbitMQ", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rabbitmq/rabbitmq-original.svg" }
+        { name: "Kafka", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/apachekafka/apachekafka-original.svg" },
+        { name: "AWS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" },
+        { name: "Docker", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
+        { name: "Kubernetes", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-original.svg" },
+        { name: "Terraform", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg" },
+        { name: "Jenkins", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" },
+        { name: "Linux", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" }
       ]
     },
     {
-      title: "AI/ML Libraries", icon: <Monitor size={20} />,
+      title: "Web Technologies", icon: <Globe size={20} />,
+      darkBg: "bg-[#C7D9DD]/15 text-[#C7D9DD]", lightBg: "bg-[#C7D9DD]/40 text-[#4a7a8a]",
+      skills: [
+        { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+        { name: "Spring Boot", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" },
+        { name: "Next.js", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" },
+        { name: "FastAPI", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg" },
+        { name: "GraphQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg" },
+        { name: "WebSocket", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg" },
+        { name: "RESTful APIs", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" }
+      ]
+    },
+    {
+      title: "Tools & Monitoring", icon: <Wrench size={20} />,
+      darkBg: "bg-[#ADB2D4]/15 text-[#c0c4e8]", lightBg: "bg-[#ADB2D4]/25 text-[#6B72A8]",
+      skills: [
+        { name: "Prometheus", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg" },
+        { name: "Grafana", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" },
+        { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+        { name: "JIRA", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg" },
+        { name: "Agile/Scrum", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg" }
+      ]
+    },
+    {
+      title: "AI & Machine Learning", icon: <Monitor size={20} />,
       darkBg: "bg-[#D5E5D5]/15 text-[#a0c8a0]", lightBg: "bg-[#D5E5D5]/50 text-[#3a7a4a]",
       skills: [
-        { name: "TensorFlow", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" },
         { name: "PyTorch", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" },
-        { name: "Pandas", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" },
-        { name: "NumPy", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" },
+        { name: "TensorFlow", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" },
         { name: "HuggingFace", icon: "https://cdn-icons-png.flaticon.com/512/2103/2103832.png" },
-        { name: "BERT/NLP", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" }
+        { name: "NumPy", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg" },
+        { name: "Pandas", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg" }
       ]
     }
   ];
@@ -180,20 +182,21 @@ export default function Portfolio() {
   const experiences = [
     {
       company: "Amazon One Medical",
-      logoDotBg: "#00a8a8",
+      logoDotBg: "#FF9900",
       logoDotContent: (
-        <div className="flex flex-col items-center justify-center w-full h-full p-1">
-          <span style={{fontSize:'9px', fontWeight:'800', color:'white', letterSpacing:'-0.5px', lineHeight:1}}>amazon</span>
-          <span style={{fontSize:'7px', fontWeight:'700', color:'#7fffd4', letterSpacing:'0px', lineHeight:1.2}}>one medical</span>
-        </div>
+        <img src="/amazon-logo.png" alt="Amazon" className="w-full h-full object-cover" />
       ),
-      role: "Incoming SDE Co-op",
+      role: "Software Development Engineer Intern",
       team: "One Medical Product Development",
-      period: "Jul 2026 – Jan 2027",
+      period: "Jul 2026 – Present",
       location: "Santa Clara, CA",
-      incoming: true,
-      tags: ["Healthcare Tech", "AWS", "Full Stack"],
-      achievements: ["Joining the One Medical Product Development team as an SDE Co-op, working on healthcare technology products at Amazon's Santa Clara office."]
+      tags: ["AWS", "SQS", "DynamoDB", "Java", "TestNG"],
+      achievements: [
+        "Designed an asynchronous notification system (SQS, DynamoDB two-phase idempotency, SHA-256 PHI hashing) for booking failures previously met with zero patient communication, eliminating 100% of silent failures and achieving over 99% email delivery with dedup and frequency cap guardrails",
+        "Extended a notification platform (AWS Lambda) to support email delivery for unregistered patients, migrating off a legacy direct-call path, with full observability including dedup, frequency caps, and CloudWatch alarms",
+        "Authored 70 end-to-end integration test scenarios (Java, TestNG) across 10 APIs and 3 pre-prod environments, migrating to black-box API assertions and driving the suite's flaky-failure rate from 40% to 0 while cutting runtime from 18 to 8 minutes",
+        "Wrote 3 internal wiki pages covering new hire onboarding, team agile process, and the AI appointment booking agent's architecture, improving knowledge sharing and speeding up new hire ramp-up"
+      ]
     },
     {
       company: "Nokia Solutions",
@@ -204,31 +207,12 @@ export default function Portfolio() {
       role: "Software Developer",
       period: "May 2024 – Aug 2025",
       location: "Gurgaon, India",
-      tags: ["Python", "Kafka", "CI/CD", "GPT", "REST APIs"],
+      tags: ["Python", "Kafka", "CI/CD", "Vector Search", "REST APIs"],
       achievements: [
-        "Designed an AI-powered internal assistant using Python, REST APIs, and GPT-based NLP to centralize search across 5,000+ internal documents, reducing retrieval time by 70% for 50+ engineers",
-        "Implemented automated CI/CD pipelines with monitoring and rollback strategies across 4 engineering teams, reducing deployment failures by 50%",
-        "Architected an Apache Kafka-based event reprocessing system for network telemetry pipelines, cutting error rates to <1%",
-        "Drove cross-team technical alignment, reducing incident rates by 30% and shortening release cycles from 2 weeks to 1 week"
-      ]
-    },
-    {
-      company: "Grant Thornton",
-      logoDotBg: "#6B2D8B",
-      logoDotContent: (
-        <div className="flex flex-col items-center justify-center w-full h-full">
-          <span style={{fontSize:'9px', fontWeight:'800', color:'white', letterSpacing:'0px', lineHeight:1.1, textAlign:'center'}}>Grant</span>
-          <span style={{fontSize:'9px', fontWeight:'800', color:'white', letterSpacing:'0px', lineHeight:1.1, textAlign:'center'}}>Thornton</span>
-        </div>
-      ),
-      role: "Software Developer (Internal Audit Team)",
-      period: "Nov 2022 – May 2024",
-      location: "Noida, India",
-      tags: ["React", "PostgreSQL", "Docker", "Jenkins", "REST APIs"],
-      achievements: [
-        "Built a full-stack project management platform with React, Python, and PostgreSQL, centralizing workflows for 3,000+ projects and cutting response time by 35%",
-        "Developed containerized CI/CD pipelines using Docker, Jenkins, and Git for 15+ microservices, reducing post-release defects by 60%",
-        "Optimized high-traffic REST APIs and frontend performance, reducing response times by 20% supporting 300+ concurrent users"
+        "Architected and deployed a semantic search platform using Python and vector embeddings, enabling context-aware retrieval across 5,000+ documents and improving knowledge access for 50+ engineers",
+        "Implemented data-driven CI/CD pipelines using Jenkins, Git, and Docker for 15+ microservices with unit testing frameworks, reducing post-release defects by 40% and ensuring smooth deployments of critical enterprise applications",
+        "Engineered a fault-tolerant event reprocessing system using Apache Kafka, implementing retry topics, dead-letter queues, and idempotent consumers to reduce telemetry processing errors to less than 1% at scale",
+        "Standardized backend architecture through API contract enforcement, service decomposition, and asynchronous communication patterns, reducing release cycle time from 2 weeks to 1 week"
       ]
     }
   ];
@@ -264,19 +248,19 @@ export default function Portfolio() {
   const getBotReply = (msg) => {
     const m = msg.toLowerCase();
     if (m.includes('skill') || m.includes('tech') || m.includes('stack') || m.includes('language') || m.includes('framework'))
-      return "Mansi's core stack includes Python, Java, TypeScript, React, Spring Boot, Node.js, PostgreSQL, Docker, Kubernetes, AWS, and Kafka. She also works with TensorFlow, PyTorch, and HuggingFace for AI/ML projects! 💻";
+      return "Mansi's core stack includes Python, Java, Go, and TypeScript; React, Spring Boot, Next.js, and FastAPI on the web side; PostgreSQL, Redis, and Kafka for data; and AWS (SQS, DynamoDB, Lambda, S3, EC2, CloudWatch) with Docker, Kubernetes, and Terraform for infra. She also works with PyTorch, TensorFlow, and HuggingFace for AI/ML projects! 💻";
     if (m.includes('project') || m.includes('built') || m.includes('work'))
       return "Mansi has built some cool projects! NUMockBuddy (AI mock interview platform with Claude API), AuditIQ (security automation with NLP), OrbitFiles (cloud storage with RAG search), and TechCareer Analyzer (ML pipeline for job market data). Check them out on her GitHub! 🚀";
-    if (m.includes('experience') || m.includes('job') || m.includes('work') || m.includes('company') || m.includes('nokia') || m.includes('grant'))
-      return "Mansi has 3+ years of professional experience. She worked as a Software Developer at Nokia Solutions (2024-2025) and Grant Thornton (2022-2024). She's also joining Amazon's One Medical team as an SDE Co-op in July 2026! 🏢";
+    if (m.includes('experience') || m.includes('job') || m.includes('work') || m.includes('company') || m.includes('nokia'))
+      return "Mansi has 1.5+ years of professional experience. She's currently an SDE Intern on Amazon's One Medical team in Santa Clara, and before that she was a Software Developer at Nokia Solutions (2024-2025) working on Kafka pipelines, CI/CD, and semantic search. 🏢";
     if (m.includes('amazon') || m.includes('one medical') || m.includes('co-op') || m.includes('intern'))
-      return "Mansi is joining Amazon's One Medical Product Development team as an SDE Co-op in Santa Clara, CA from July 2026 to January 2027. Super exciting opportunity in healthcare tech! 🟠";
+      return "Mansi is currently an SDE Intern on Amazon's One Medical Product Development team in Santa Clara, CA, since July 2026. She's working on backend systems for healthcare tech! 🟠";
     if (m.includes('education') || m.includes('degree') || m.includes('university') || m.includes('northeastern') || m.includes('gpa') || m.includes('school'))
       return "Mansi is pursuing her MS in Information Systems at Northeastern University, Seattle with a perfect 4.0 GPA, graduating May 2027. She did her BTech in Computer Science from AKTU, India. 🎓";
     if (m.includes('contact') || m.includes('email') || m.includes('reach') || m.includes('hire') || m.includes('connect'))
       return "You can reach Mansi at mansimaanu8627@gmail.com, connect on LinkedIn at linkedin.com/in/singh-mansi17, or check her GitHub at github.com/MansiSingh17. She's open to new opportunities! 📬";
     if (m.includes('location') || m.includes('where') || m.includes('seattle') || m.includes('city'))
-      return "Mansi is currently based in Seattle, WA. She'll be relocating to Santa Clara, CA for her Amazon co-op starting July 2026! 📍";
+      return "Mansi is currently based in Santa Clara, CA for her Amazon internship, and studies at Northeastern University's Seattle campus. 📍";
     if (m.includes('open source') || m.includes('github') || m.includes('contribution'))
       return "Mansi actively contributes to open source! She has contributed to Apache Beam Python SDK and worked on GSoC projects with Kubeflow and Git. Check her GitHub at github.com/MansiSingh17 🔓";
     if (m.includes('leetcode') || m.includes('dsa') || m.includes('algorithm') || m.includes('competitive'))
@@ -459,7 +443,7 @@ export default function Portfolio() {
               <span className={txt}>{typewriterText}</span><span className="animate-pulse" style={{color: accent}}>|</span>
             </p>
             <p className={`text-sm sm:text-base leading-relaxed mb-8 max-w-md mx-auto md:mx-0 ${t('text-gray-400','text-slate-900')}`}>
-              MS in Information Systems at Northeastern University (4.0 GPA). 3+ years at Nokia &amp; Grant Thornton. Incoming Amazon SDE Co-op, One Medical.
+              MS in Information Systems at Northeastern University (4.0 GPA). 1.5+ years of experience. Currently SDE Intern at Amazon One Medical, building distributed backend systems on AWS.
             </p>
             <div className="flex flex-wrap justify-center md:justify-start gap-3 mb-8">
               <button onClick={() => setShowResumeModal(true)}
@@ -557,16 +541,16 @@ export default function Portfolio() {
             <h2 className="text-3xl font-bold" style={{color: isDark?"white":"#1e293b"}}>👨‍💻 About Me</h2>
             <div className={`space-y-4 text-sm leading-relaxed ${t('text-[#ADB2D4]','text-slate-700')}`}>
               <p>
-                I'm a <strong>Software Developer</strong> pursuing my <strong>Master's in Information Systems</strong> at <strong>Northeastern University</strong> with a perfect <strong>4.0 GPA</strong>. With <strong>3+ years</strong> of professional experience at <strong>Nokia Solutions</strong> and <strong>Grant Thornton</strong>, I specialize in building <strong>scalable full-stack applications</strong>, <strong>distributed backend systems</strong>, and implementing <strong>DevOps best practices</strong> across large engineering teams.
+                I'm a <strong>Software Developer</strong> pursuing my <strong>Master's in Information Systems</strong> at <strong>Northeastern University</strong> with a perfect <strong>4.0 GPA</strong>. With <strong>1.5+ years</strong> of professional experience, I'm currently an <strong>SDE Intern</strong> on <strong>Amazon's One Medical</strong> team in Santa Clara, and previously built backend systems at <strong>Nokia Solutions</strong>. I specialize in <strong>distributed backend systems</strong>, <strong>event-driven architecture</strong>, and <strong>cloud-native applications on AWS</strong>.
               </p>
               <p>
-                I have a strong track record of delivering measurable impact — reduced <strong>deployment failures by 50%</strong>, improved <strong>API response times by 35%</strong> across 3,000+ projects, architected <strong>Kafka-based event pipelines</strong> cutting error rates to under 1%, and built <strong>GPT-powered internal tools</strong> that enhanced team efficiency by <strong>70%</strong> for 50+ engineers.
+                I have a strong track record of delivering measurable impact. At <strong>Amazon</strong>, I designed an asynchronous notification system on <strong>SQS and DynamoDB</strong> that eliminated <strong>100% of silent booking failures</strong> with <strong>over 99% email delivery</strong>, and drove an integration suite's flaky-failure rate from <strong>40% to 0</strong> while cutting runtime from <strong>18 to 8 minutes</strong>. At <strong>Nokia</strong>, I architected a fault-tolerant <strong>Kafka</strong> reprocessing system that cut telemetry errors to <strong>under 1%</strong>, built semantic search across <strong>5,000+ documents</strong> for 50+ engineers, and shortened release cycles from <strong>2 weeks to 1 week</strong>.
               </p>
               <p>
-                My core stack includes <strong>Python, Java, TypeScript, React, Spring Boot, Node.js, PostgreSQL, Docker, Kubernetes</strong>, and <strong>AWS</strong>. I'm passionate about <strong>system design</strong>, <strong>cloud-native architecture</strong>, and building products that scale.
+                My core stack spans <strong>Python, Java, Go</strong>, and <strong>TypeScript</strong>; <strong>React, Spring Boot, Next.js</strong>, and <strong>FastAPI</strong>; <strong>PostgreSQL, Redis</strong>, and <strong>Kafka</strong>; and <strong>AWS</strong> (SQS, DynamoDB, Lambda, S3, EC2, CloudWatch) with <strong>Docker, Kubernetes</strong>, and <strong>Terraform</strong>. I'm passionate about <strong>system design</strong>, <strong>observability</strong>, and building products that scale.
               </p>
               <p>
-                In <strong>July 2026</strong>, I'm joining <strong>Amazon's One Medical</strong> team as an <strong>SDE Co-op</strong> in Santa Clara, working on healthcare technology at scale. I'm actively contributing to <strong>open source</strong> and always looking for opportunities to solve hard engineering problems.
+                Outside of work I contribute to <strong>open source</strong> — including the <strong>Apache Beam</strong> Python SDK and GSoC projects with <strong>Kubeflow</strong> and <strong>Git</strong> — and I'm always looking for opportunities to solve hard engineering problems at scale.
               </p>
             </div>
             <a href="mailto:mansimaanu8627@gmail.com"
