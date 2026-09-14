@@ -93,7 +93,7 @@ export default function Portfolio() {
   const skillCategories = [
     {
       title: "Programming Languages", icon: <Laptop size={20} />,
-      darkBg: "bg-[#ADB2D4]/15 text-[#ADB2D4]", lightBg: "bg-[#ADB2D4]/25 text-[#6B72A8]",
+      darkBg: "bg-primary/15 text-primary", lightBg: "bg-primary/25 text-primary-700",
       skills: [
         { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
         { name: "Java", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" },
@@ -107,7 +107,7 @@ export default function Portfolio() {
     },
     {
       title: "Databases & Cloud", icon: <BookOpen size={20} />,
-      darkBg: "bg-[#2a3347]/60 text-[#9098c0]", lightBg: "bg-[#D5E5D5]/60 text-[#4a7a5a]",
+      darkBg: "bg-line/60 text-primary-350", lightBg: "bg-tertiary/60 text-tertiary-600",
       skills: [
         { name: "PostgreSQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
         { name: "MySQL", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
@@ -124,7 +124,7 @@ export default function Portfolio() {
     },
     {
       title: "Web Technologies", icon: <Globe size={20} />,
-      darkBg: "bg-[#C7D9DD]/15 text-[#C7D9DD]", lightBg: "bg-[#C7D9DD]/40 text-[#4a7a8a]",
+      darkBg: "bg-secondary/15 text-secondary", lightBg: "bg-secondary/40 text-secondary-700",
       skills: [
         { name: "React", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
         { name: "Spring Boot", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg" },
@@ -138,7 +138,7 @@ export default function Portfolio() {
     },
     {
       title: "Tools & Monitoring", icon: <Wrench size={20} />,
-      darkBg: "bg-[#ADB2D4]/15 text-[#c0c4e8]", lightBg: "bg-[#ADB2D4]/25 text-[#6B72A8]",
+      darkBg: "bg-primary/15 text-primary-200", lightBg: "bg-primary/25 text-primary-700",
       skills: [
         { name: "Prometheus", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg" },
         { name: "Grafana", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg" },
@@ -149,7 +149,7 @@ export default function Portfolio() {
     },
     {
       title: "AI & Machine Learning", icon: <Monitor size={20} />,
-      darkBg: "bg-[#D5E5D5]/15 text-[#a0c8a0]", lightBg: "bg-[#D5E5D5]/50 text-[#3a7a4a]",
+      darkBg: "bg-tertiary/15 text-tertiary-400", lightBg: "bg-tertiary/50 text-tertiary-700",
       skills: [
         { name: "PyTorch", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" },
         { name: "TensorFlow", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" },
@@ -229,22 +229,41 @@ export default function Portfolio() {
   // ── PASTEL palette ──
   const P  = '#ADB2D4';  // lavender (dark accent)
   const PL = '#6B72A8';  // deeper lavender (light accent)
-  const bg         = t('bg-[#0d1117]', 'bg-[#EEF1DA]');
-  const card       = t('bg-[#1e2535] border-[#2a3347] hover:border-[#ADB2D4]/60', 'bg-white border-[#D4D8EE] hover:border-[#ADB2D4] shadow-sm');
+  const bg         = t('bg-ink', 'bg-cream');
+  // Light-mode section washes: soft blends of the four palette colours
+  // (#ADB2D4 lavender, #C7D9DD ice, #D5E5D5 sage, #EEF1DA cream).
+  // Alpha suffixes: 33=20%  38=22%  40=25%  66=40%. Dark mode is unchanged.
+  const WASH = {
+    about:    'linear-gradient(135deg, #ADB2D466 0%, #C7D9DD40 100%)',
+    skills:   'linear-gradient(135deg, #C7D9DD4D 0%, #ADB2D44D 50%, #D5E5D54D 100%)',
+    projects: 'linear-gradient(135deg, #D5E5D54D 0%, #ADB2D452 100%)',
+    contact:  'linear-gradient(135deg, #EEF1DA66 0%, #ADB2D461 100%)',
+  };
+
+  // Dark-mode equivalents: the same palette hues, but only 10-14% over the dark
+  // base (#161B27). Above 14% the light-on-dark text drops below WCAG AA.
+  const WASH_DARK = {
+    about:    'linear-gradient(135deg, #ADB2D424 0%, #C7D9DD1A 100%), #161B27',
+    skills:   'linear-gradient(135deg, #C7D9DD1A 0%, #ADB2D41F 50%, #D5E5D51A 100%), #161B27',
+    projects: 'linear-gradient(135deg, #D5E5D51A 0%, #ADB2D41F 100%), #161B27',
+    contact:  'linear-gradient(135deg, #EEF1DA1A 0%, #ADB2D421 100%), #161B27',
+  };
+
+  const card       = t('bg-surface border-line hover:border-primary/60', 'bg-white border-primary-100 hover:border-primary shadow-sm');
   const txt        = t('text-white', 'text-slate-900');
-  const txtMuted   = t('text-[#ADB2D4]', 'text-slate-600');
-  const txtFaint   = t('text-[#7a82aa]', 'text-slate-500');
-  const divider    = t('border-[#2a3347]', 'border-[#C7D9DD]');
-  const navBg      = scrolled ? t('bg-[#0d1117]/95 backdrop-blur-md border-b border-[#2a3347]', 'bg-white/95 backdrop-blur-md border-b border-[#e2e5f0] shadow-sm') : 'bg-transparent';
-  const expCardCls = t('bg-[#1e2535] border-[#2a3347]', 'bg-white border-[#D4D8EE] shadow-sm');
-  const projCardCls= t('bg-[#1e2535] border-[#2a3347]', 'bg-white border-[#D4D8EE] shadow-sm');
-  const moreCls    = t('bg-[#1e2535] border-[#2a3347] hover:border-[#ADB2D4]/60', 'bg-white border-[#D4D8EE] hover:border-[#ADB2D4] shadow-sm');
-  const footerCls  = t('bg-[#0d1117] border-t border-[#1e2535]', 'bg-[#D5E5D5] border-t border-[#C7D9DD]');
-  const modalCls   = t('bg-[#1e2535] border-[#2a3347]', 'bg-white border-[#D4D8EE]');
-  const modalInputCls = t('bg-[#0d1117] border-[#2a3347] text-[#ADB2D4]', 'bg-[#EEF0F8] border-[#D4D8EE] text-slate-500');
-  const socialCls  = t('border-[#2a3347] text-[#7a82aa] hover:border-[#ADB2D4] hover:text-[#ADB2D4]', 'border-[#e2e5f0] text-slate-500 hover:border-[#ADB2D4] hover:text-[#ADB2D4]');
-  const filterInactive = t('bg-[#1e2535] text-[#7a82aa] hover:bg-[#2a3347] hover:text-[#ADB2D4] border border-[#2a3347]', 'bg-white text-slate-600 hover:bg-[#f1f3f9] border border-[#e2e5f0]');
-  const menuCls    = t('bg-[#161b27] border-[#2a3347]', 'bg-[#EEF1DA] border-[#D4D8EE] shadow-lg');
+  const txtMuted   = t('text-primary', 'text-slate-600');
+  const txtFaint   = t('text-primary-350', 'text-slate-600');
+  const divider    = t('border-line', 'border-secondary');
+  const navBg      = scrolled ? t('bg-ink/95 backdrop-blur-md border-b border-line', 'bg-white/95 backdrop-blur-md border-b border-primary-50 shadow-sm') : 'bg-transparent';
+  const expCardCls = t('bg-surface border-line', 'bg-white border-primary-100 shadow-sm');
+  const projCardCls= t('bg-surface border-line', 'bg-white border-primary-100 shadow-sm');
+  const moreCls    = t('bg-surface border-line hover:border-primary/60', 'bg-white border-primary-100 hover:border-primary shadow-sm');
+  const footerCls  = t('bg-ink border-t border-surface', 'bg-tertiary border-t border-secondary');
+  const modalCls   = t('bg-surface border-line', 'bg-white border-primary-100');
+  const modalInputCls = t('bg-ink border-line text-primary', 'bg-primary-25 border-primary-100 text-slate-600');
+  const socialCls  = t('border-line text-primary-500 hover:border-primary hover:text-primary', 'border-primary-50 text-slate-600 hover:border-primary hover:text-primary');
+  const filterInactive = t('bg-surface text-primary-500 hover:bg-line hover:text-primary border border-line', 'bg-white text-slate-600 hover:bg-primary-25 border border-primary-50');
+  const menuCls    = t('bg-ink-2 border-line', 'bg-cream border-primary-100 shadow-lg');
   const accent     = isDark ? P : PL;
 
   // floating hero tags with brand colors
@@ -289,49 +308,49 @@ export default function Portfolio() {
     {
       cls: "tag-float-1 absolute -top-4 left-0",
       label: "Full Stack", emoji: "⚡",
-      darkBg: "bg-[#1e2535]/95", lightBg: "bg-white",
-      darkBorder: "border-[#ADB2D4]/50", lightBorder: "border-[#ADB2D4]/60",
-      darkText: "text-[#ADB2D4]", lightText: "text-[#6B72A8]",
+      darkBg: "bg-surface/95", lightBg: "bg-white",
+      darkBorder: "border-primary/50", lightBorder: "border-primary/60",
+      darkText: "text-primary", lightText: "text-primary-700",
       icon: null
     },
     {
       cls: "tag-float-2 absolute top-1/4 -left-10",
       label: "Backend Dev", emoji: "🔧",
-      darkBg: "bg-[#1e2535]/95", lightBg: "bg-white",
-      darkBorder: "border-[#D5E5D5]/50", lightBorder: "border-[#D5E5D5]",
-      darkText: "text-[#a0c8a0]", lightText: "text-[#3a7a4a]",
+      darkBg: "bg-surface/95", lightBg: "bg-white",
+      darkBorder: "border-tertiary/50", lightBorder: "border-tertiary",
+      darkText: "text-tertiary-400", lightText: "text-tertiary-700",
       icon: null
     },
     {
       cls: "tag-float-3 absolute bottom-1/4 -left-8",
       label: "ML & AI", emoji: "🤖",
-      darkBg: "bg-[#1e2535]/95", lightBg: "bg-white",
-      darkBorder: "border-[#ADB2D4]/50", lightBorder: "border-[#ADB2D4]/60",
-      darkText: "text-[#ADB2D4]", lightText: "text-[#6B72A8]",
+      darkBg: "bg-surface/95", lightBg: "bg-white",
+      darkBorder: "border-primary/50", lightBorder: "border-primary/60",
+      darkText: "text-primary", lightText: "text-primary-700",
       icon: null
     },
     {
       cls: "tag-float-4 absolute -top-4 right-0",
       label: "Cloud & DevOps", emoji: "☁️",
-      darkBg: "bg-[#1e2535]/95", lightBg: "bg-white",
-      darkBorder: "border-[#C7D9DD]/50", lightBorder: "border-[#C7D9DD]",
-      darkText: "text-[#C7D9DD]", lightText: "text-[#4a7a8a]",
+      darkBg: "bg-surface/95", lightBg: "bg-white",
+      darkBorder: "border-secondary/50", lightBorder: "border-secondary",
+      darkText: "text-secondary", lightText: "text-secondary-700",
       icon: null
     },
     {
       cls: "tag-float-5 absolute top-1/4 -right-10",
       label: "Open Source", emoji: "🔓",
-      darkBg: "bg-[#1e2535]/95", lightBg: "bg-white",
-      darkBorder: "border-[#D5E5D5]/50", lightBorder: "border-[#D5E5D5]",
-      darkText: "text-[#a0c8a0]", lightText: "text-[#3a7a4a]",
+      darkBg: "bg-surface/95", lightBg: "bg-white",
+      darkBorder: "border-tertiary/50", lightBorder: "border-tertiary",
+      darkText: "text-tertiary-400", lightText: "text-tertiary-700",
       icon: null
     },
     {
       cls: "tag-float-6 absolute bottom-1/4 -right-8",
       label: "Distributed Systems", emoji: "🏗️",
-      darkBg: "bg-[#1e2535]/95", lightBg: "bg-white",
-      darkBorder: "border-[#ADB2D4]/50", lightBorder: "border-[#ADB2D4]/60",
-      darkText: "text-[#ADB2D4]", lightText: "text-[#6B72A8]",
+      darkBg: "bg-surface/95", lightBg: "bg-white",
+      darkBorder: "border-primary/50", lightBorder: "border-primary/60",
+      darkText: "text-primary", lightText: "text-primary-700",
       icon: null
     },
   ];
@@ -381,7 +400,7 @@ export default function Portfolio() {
             <div className="hidden md:flex items-center space-x-7">
               {['About','Skills','Experience','Projects','Contact'].map(item => (
                 <a key={item} href={`#${item.toLowerCase()}`}
-                  className={`nav-link text-sm font-semibold transition-colors ${txtMuted} hover:text-[#ADB2D4]`}>{item}</a>
+                  className={`nav-link text-sm font-semibold transition-colors ${txtMuted} hover:text-primary`}>{item}</a>
               ))}
 
               <button onClick={() => setShowResumeModal(true)}
@@ -394,11 +413,11 @@ export default function Portfolio() {
 
               {/* Theme toggle - single icon */}
               <button onClick={() => setIsDark(d => !d)}
-                className={`w-9 h-9 rounded-lg border flex items-center justify-center transition-all duration-300 ${t('border-[#2a3347] bg-[#161b27]','border-[#ADB2D4] bg-[#EEF1DA]')}`}
+                className={`w-9 h-9 rounded-lg border flex items-center justify-center transition-all duration-300 ${t('border-line bg-ink-2','border-primary bg-cream')}`}
                 aria-label="Toggle theme"
                 title={isDark ? 'Switch to light mode' : 'Switch to dark mode'}>
                 {isDark
-                  ? <Sun size={16} style={{color:'#fbbf24'}} />
+                  ? <Sun size={16} style={{color:'#fbc02d'}} />
                   : <Moon size={16} style={{color: PL}} />
                 }
               </button>
@@ -406,7 +425,7 @@ export default function Portfolio() {
 
             <div className="md:hidden flex items-center gap-3">
               <button onClick={() => setIsDark(d => !d)}
-                className={`w-8 h-8 rounded-lg border flex items-center justify-center transition-all ${t('border-[#2a3347] bg-[#161b27]','border-[#ADB2D4] bg-[#EEF1DA]')}`}
+                className={`w-8 h-8 rounded-lg border flex items-center justify-center transition-all ${t('border-line bg-ink-2','border-primary bg-cream')}`}
                 title={isDark ? 'Switch to light mode' : 'Switch to dark mode'}>
                 {isDark ? <Sun size={15} className="text-yellow-400"/> : <Moon size={15} className="text-slate-600"/>}
               </button>
@@ -420,7 +439,7 @@ export default function Portfolio() {
             <div className={`md:hidden pb-4 space-y-2 rounded-lg mt-2 p-4 border ${menuCls}`}>
               {['About','Skills','Experience','Projects','Contact'].map(item => (
                 <a key={item} href={`#${item.toLowerCase()}`} onClick={() => setIsMenuOpen(false)}
-                  className={`block py-2 text-sm font-medium ${txtMuted} hover:text-[#ADB2D4]`}>{item}</a>
+                  className={`block py-2 text-sm font-medium ${txtMuted} hover:text-primary`}>{item}</a>
               ))}
               <button onClick={() => { setShowResumeModal(true); setIsMenuOpen(false); }}
                 className="block w-full text-left py-2 text-sm font-semibold" style={{color:accent}}>Request Resume</button>
@@ -454,7 +473,7 @@ export default function Portfolio() {
                 <Lock size={14}/> Request My Resume
               </button>
               <a href="#projects"
-                className={`flex items-center gap-2 border px-5 py-2.5 rounded-lg transition-all text-sm font-medium ${t('border-[#2a3347] text-[#ADB2D4] hover:border-[#ADB2D4] hover:text-white','border-[#ADB2D4] text-slate-700 hover:border-[#6B72A8] hover:text-slate-900')}`}>
+                className={`flex items-center gap-2 border px-5 py-2.5 rounded-lg transition-all text-sm font-medium ${t('border-line text-primary hover:border-primary hover:text-white','border-primary text-slate-700 hover:border-primary-600 hover:text-slate-900')}`}>
                 View My Work
               </a>
             </div>
@@ -485,7 +504,7 @@ export default function Portfolio() {
             ))}
 
             <div className="w-60 h-60 md:w-72 md:h-72 rounded-full overflow-hidden border-[3px] p-1"
-              style={{ borderColor: isDark?'#ADB2D4':'#ADB2D4', background: isDark?'#1e2535':'#e8eaf6' }}>
+              style={{ borderColor: isDark?'#ADB2D4':'#ADB2D4', background: isDark?'#1e2535':'#e2e5f0' }}>
               <img src="/mansi.jpg" alt="Mansi Singh"
                 className="w-full h-full object-cover object-top rounded-full"
                 onError={(e) => { e.target.src = "https://api.dicebear.com/7.x/avataaars/svg?seed=Mansi"; }}/>
@@ -537,12 +556,12 @@ export default function Portfolio() {
       )}
 
       {/* ABOUT */}
-      <section id="about" className={`relative z-10 scroll-animate`} style={{background: isDark?'#161b27':'white'}}>
+      <section id="about" className={`relative z-10 scroll-animate`} style={{background: isDark?WASH_DARK.about:WASH.about}}>
         <div className="flex flex-col md:grid md:grid-cols-2 min-h-[60vh]">
           <div className="w-full h-64 md:h-full bg-cover bg-center" style={{ backgroundImage: 'url(/about-illustration.jpg)' }}/>
           <div className="flex flex-col justify-center px-8 lg:px-14 py-16 space-y-5">
-            <h2 className="text-3xl font-bold" style={{color: isDark?"white":"#1e293b"}}>👨‍💻 About Me</h2>
-            <div className={`space-y-4 text-sm leading-relaxed ${t('text-[#ADB2D4]','text-slate-700')}`}>
+            <h2 className="text-3xl font-bold" style={{color: isDark ? "white" : "#575E93"}}>👨‍💻 About Me</h2>
+            <div className={`space-y-4 text-sm leading-relaxed ${t('text-primary','text-slate-700')}`}>
               <p>
                 I'm a <strong>Software Developer</strong> pursuing my <strong>Master's in Information Systems</strong> at <strong>Northeastern University</strong> with a perfect <strong>4.0 GPA</strong>. With <strong>1.5+ years</strong> of professional experience, I'm currently an <strong>SDE Intern</strong> on <strong>Amazon's One Medical</strong> team in Santa Clara, and previously built backend systems at <strong>Nokia Solutions</strong>. I specialize in <strong>distributed backend systems</strong>, <strong>event-driven architecture</strong>, and <strong>cloud-native applications on AWS</strong>.
               </p>
@@ -568,7 +587,7 @@ export default function Portfolio() {
       <section id="education" className={`relative z-10 py-20 px-4 sm:px-6 lg:px-8 scroll-animate`} style={{background: isDark?'#0d1117':'white'}}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-<h2 className="text-3xl font-bold" style={{color: isDark ? "white" : "#8B92C4"}}>🎓 Education</h2>
+<h2 className="text-3xl font-bold" style={{color: isDark ? "white" : "#575E93"}}>🎓 Education</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-6">
             {education.map((edu, i) => (
@@ -586,10 +605,10 @@ export default function Portfolio() {
                   </div>
                   <div className="flex flex-col gap-2 items-end ml-3">
                     {edu.current && <span className="px-2.5 py-0.5 rounded-full text-xs font-semibold transition-all duration-300 group-hover:scale-105 inline-block" style={{background: accent, color: isDark?'#0d1117':'white'}}>Current</span>}
-                    <span className={`border px-2.5 py-0.5 rounded-full text-xs font-bold ${t('bg-[#D5E5D5]/20 border-[#D5E5D5]/40 text-[#a0c8a0]','bg-[#D5E5D5] border-[#C7D9DD] text-[#3a7a4a]')}`}>GPA: {edu.gpa}</span>
+                    <span className={`border px-2.5 py-0.5 rounded-full text-xs font-bold ${t('bg-tertiary/20 border-tertiary/40 text-tertiary-400','bg-tertiary border-secondary text-tertiary-700')}`}>GPA: {edu.gpa}</span>
                   </div>
                 </div>
-                <p className={`text-xs font-bold uppercase tracking-wide mb-3 transition-all duration-300 ${t("text-gray-400 group-hover:text-[#ADB2D4]","text-slate-500 group-hover:text-[#6B72A8]")}`}>Coursework</p>
+                <p className={`text-xs font-bold uppercase tracking-wide mb-3 transition-all duration-300 ${t("text-gray-400 group-hover:text-primary","text-slate-600 group-hover:text-primary-700")}`}>Coursework</p>
                 {edu.courses.map((c,j) => <p key={j} className={`text-sm font-medium transition-colors duration-300 ${t("text-gray-400 group-hover:text-gray-200","text-slate-700 group-hover:text-slate-900")}`}>• {c}</p>)}
                 </div>
               </div>
@@ -599,10 +618,10 @@ export default function Portfolio() {
       </section>
 
       {/* SKILLS */}
-      <section id="skills" className={`relative z-10 py-20 px-4 sm:px-6 lg:px-8 scroll-animate`} style={{background: isDark?'#161b27':'white'}}>
+      <section id="skills" className={`relative z-10 py-20 px-4 sm:px-6 lg:px-8 scroll-animate`} style={{background: isDark?WASH_DARK.skills:WASH.skills}}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-<h2 className="text-3xl font-bold" style={{color: isDark ? "white" : "#8B92C4"}}>🛠️ Technical Skills</h2>
+<h2 className="text-3xl font-bold" style={{color: isDark ? "white" : "#575E93"}}>🛠️ Technical Skills</h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {skillCategories.map((cat, i) => (
@@ -613,7 +632,7 @@ export default function Portfolio() {
                 <div className="p-6">
                 <div className="flex items-center gap-3 mb-6">
                   <div className={`p-2.5 rounded-lg transition-all duration-300 group-hover:scale-110 ${isDark ? cat.darkBg : cat.lightBg}`}>{cat.icon}</div>
-                  <h3 className={`text-sm font-bold transition-colors duration-300 ${t("group-hover:text-[#ADB2D4]","group-hover:text-[#6B72A8]")} ${txt}`}>{cat.title}</h3>
+                  <h3 className={`text-sm font-bold transition-colors duration-300 ${t("group-hover:text-primary","group-hover:text-primary-700")} ${txt}`}>{cat.title}</h3>
                 </div>
                 <div className="grid grid-cols-3 gap-4">
                   {cat.skills.map((skill, j) => (
@@ -621,7 +640,7 @@ export default function Portfolio() {
                       <div className="w-9 h-9 flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
                         <img src={skill.icon} alt={skill.name} className="w-full h-full object-contain"/>
                       </div>
-                      <span className={`text-xs font-semibold text-center leading-tight transition-colors duration-300 ${t("text-gray-400 group-hover:text-[#ADB2D4]","text-slate-500 group-hover:text-[#6B72A8]")}`}>{skill.name}</span>
+                      <span className={`text-xs font-semibold text-center leading-tight transition-colors duration-300 ${t("text-gray-400 group-hover:text-primary","text-slate-600 group-hover:text-primary-700")}`}>{skill.name}</span>
                     </div>
                   ))}
                 </div>
@@ -637,7 +656,7 @@ export default function Portfolio() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-14">
             <p className={`text-xs uppercase tracking-widest mb-2 ${txtFaint}`}>Where I've worked</p>
-<h2 className="text-3xl font-bold" style={{color: isDark ? "white" : "#8B92C4"}}>💼 Experience</h2>
+<h2 className="text-3xl font-bold" style={{color: isDark ? "white" : "#575E93"}}>💼 Experience</h2>
           </div>
 
           <div className="relative pl-16">
@@ -652,14 +671,14 @@ export default function Portfolio() {
                   <div className={`absolute -left-16 w-14 h-14 rounded-full border-2 flex items-center justify-center shadow-lg overflow-hidden ${
                     exp.incoming
                       ? ''
-                      : t('border-[#2a3347]','border-[#C7D9DD]')
+                      : t('border-line','border-secondary')
                   }`} style={{ background: exp.logoDotBg }}>
                     {exp.logoDotContent}
                   </div>
 
                   {/* card */}
                   <div className={`exp-card group ${exp.incoming
-                    ? t('border-[#ADB2D4]/50 bg-[#ADB2D4]/5','border-[#6B72A8]/40 bg-[#ADB2D4]/10')
+                    ? t('border-primary/50 bg-primary/5','border-primary-600/40 bg-primary/10')
                     : expCardCls
                   }`}>
 
@@ -726,10 +745,10 @@ export default function Portfolio() {
       </section>
 
       {/* PROJECTS */}
-      <section id="projects" className={`relative z-10 py-20 px-4 sm:px-6 lg:px-8 scroll-animate`} style={{background: isDark?'#161b27':'white'}}>
+      <section id="projects" className={`relative z-10 py-20 px-4 sm:px-6 lg:px-8 scroll-animate`} style={{background: isDark?WASH_DARK.projects:WASH.projects}}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-<h2 className="text-3xl font-bold" style={{color: isDark ? "white" : "#8B92C4"}}>🚀 Featured Projects</h2>
+<h2 className="text-3xl font-bold" style={{color: isDark ? "white" : "#575E93"}}>🚀 Featured Projects</h2>
           </div>
           <div className="flex flex-wrap justify-center gap-2 mb-10">
             {['All','Full Stack','AI/ML','Frontend','Mobile'].map(cat => (
@@ -768,7 +787,7 @@ export default function Portfolio() {
       <section className={`relative z-10 py-20 px-4 sm:px-6 lg:px-8 scroll-animate`} style={{background: isDark?'#0d1117':'white'}}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-14">
-<h2 className="text-3xl font-bold" style={{color: isDark ? "white" : "#8B92C4"}}>A bit more about me 👩‍💻</h2>
+<h2 className="text-3xl font-bold" style={{color: isDark ? "white" : "#575E93"}}>A bit more about me 👩‍💻</h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {moreAboutMe.map((item, i) => (
@@ -778,11 +797,11 @@ export default function Portfolio() {
                 onMouseLeave={e=>{e.currentTarget.style.transform=''; e.currentTarget.style.boxShadow='none'; e.currentTarget.style.borderColor=isDark?'rgba(173,178,212,0.4)':'rgba(173,178,212,0.6)';}}>
                 <div className="p-8 flex flex-col items-center w-full">
                 {/* icon container with accent bg on hover */}
-                <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-5 transition-all duration-300 ${t('bg-[#2a3347] group-hover:bg-[#ADB2D4]/20','bg-[#EEF1DA] group-hover:bg-[#ADB2D4]/20')}`}>
+                <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-5 transition-all duration-300 ${t('bg-line group-hover:bg-primary/20','bg-cream group-hover:bg-primary/20')}`}>
                   {item.icon}
                 </div>
                 <div className='w-8 h-0.5 mb-4 rounded-full transition-all duration-300' style={{background: isDark?'#2a3347':'#C7D9DD'}} onMouseEnter={e=>e.target.style.background=accent} onMouseLeave={e=>e.target.style.background=isDark?'#2a3347':'#C7D9DD'}/>
-                <h3 className={`text-sm font-bold mb-3 uppercase tracking-widest transition-colors duration-300 ${t('text-[#ADB2D4]','text-slate-700')}`}>{item.title}</h3>
+                <h3 className={`text-sm font-bold mb-3 uppercase tracking-widest transition-colors duration-300 ${t('text-primary','text-slate-700')}`}>{item.title}</h3>
                 <p className={`text-xs leading-relaxed ${t("text-gray-500","text-slate-800")}`} dangerouslySetInnerHTML={{ __html: item.description }}/>
                 </div>
               </div>
@@ -792,9 +811,9 @@ export default function Portfolio() {
       </section>
 
       {/* CONTACT */}
-      <section id="contact" className={`relative z-10 py-16 px-4 sm:px-6 lg:px-8 scroll-animate`} style={{background: isDark?'#161b27':'white'}}>
+      <section id="contact" className={`relative z-10 py-16 px-4 sm:px-6 lg:px-8 scroll-animate`} style={{background: isDark?WASH_DARK.contact:WASH.contact}}>
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl font-bold mb-4" style={{color: isDark ? "white" : "#8B92C4"}}>📬 Let's Connect</h2>
+          <h2 className="text-3xl font-bold mb-4" style={{color: isDark ? "white" : "#575E93"}}>📬 Let's Connect</h2>
           <p className={`text-sm mb-8 ${txtMuted}`}>Open to collaborations, new opportunities, or just saying hi.</p>
           <div className="flex justify-center gap-4 mb-8">
             {[
@@ -834,14 +853,14 @@ export default function Portfolio() {
 
         {/* Chat window */}
         {showChat && (
-          <div className={`w-80 rounded-2xl shadow-2xl overflow-hidden mb-4 flex flex-col ${t('bg-[#1a1a2e]','bg-gray-900')}`} style={{height:'480px'}}>
+          <div className={`w-80 rounded-2xl shadow-2xl overflow-hidden mb-4 flex flex-col ${t('bg-ink-violet','bg-gray-900')}`} style={{height:'480px'}}>
             {/* Header */}
             <div className="flex items-center justify-between px-4 py-3" style={{background: accent}}>
               <div className="flex items-center gap-3">
                 <div className="w-9 h-9 rounded-xl flex items-center justify-center text-lg" style={{background:`${accent}cc`, color: isDark?'#0d1117':'white'}}>🤖</div>
                 <div>
                   <p className="text-white text-sm font-bold">Portfolio Assistant</p>
-                  <p className="text-xs flex items-center gap-1" style={{color: isDark?'#c8cbee':'white'}}><span className="w-1.5 h-1.5 rounded-full bg-green-400 inline-block"/>Ready to help</p>
+                  <p className="text-xs flex items-center gap-1" style={{color: isDark?'#c0c4e8':'white'}}><span className="w-1.5 h-1.5 rounded-full bg-green-400 inline-block"/>Ready to help</p>
                 </div>
               </div>
               <button onClick={() => setShowChat(false)} className="text-blue-200 hover:text-white transition-colors"><X size={18}/></button>

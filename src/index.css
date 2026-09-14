@@ -19,3 +19,21 @@ body {
 html {
   scroll-behavior: smooth;
 }
+/* Keyboard focus — visible ring in the site's own primary lavender.
+   :focus-visible so it shows for keyboard users, not on mouse click. */
+:focus-visible {
+  outline: 2px solid #ADB2D4;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Respect the OS "reduce motion" setting: neutralises the float/scrollWheel
+   keyframes and the ~45 transitions without removing them from the markup. */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
